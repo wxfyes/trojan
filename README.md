@@ -10,7 +10,8 @@ wordpress启用了强制https，经测试上传及安装主题/插件正常，wo
 trojan+wordpress一键脚本
 1、使用以下命令，trojan+wordpress一键脚本，注意不能开启CDN
 
-bash <(curl -Ls https://raw.githubusercontent.com/wxfyes/trojan/master/trojan_wp.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/wxfyes/trojan/master/trojan-wp.sh)    fork
+bash <(curl -Ls https://raw.githubusercontent.com/atrandys/trojan/master/trojan_wp.sh)  A大
 
 
 2、选择1、安装trojan + wp
