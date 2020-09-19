@@ -11,6 +11,8 @@ trojan+wordpress一键脚本
 1、使用以下命令，trojan+wordpress一键脚本，注意不能开启CDN
 
 bash <(curl -Ls https://raw.githubusercontent.com/wxfyes/trojan/master/trojan-wp.sh)    fork
+
+
 bash <(curl -Ls https://raw.githubusercontent.com/atrandys/trojan/master/trojan_wp.sh)  A大
 
 
