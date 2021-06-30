@@ -283,7 +283,6 @@ EOF
 	green "2、将下载的压缩包解压，打开文件夹，打开start.bat即打开并运行Trojan客户端"
 	green "3、打开stop.bat即关闭Trojan客户端"
 	green "4、Trojan客户端需要搭配浏览器插件使用，例如switchyomega等"
-	green "访问  https://www.v2rayssr.com/trojan-1.html ‎ 下载 浏览器插件 及教程"
 	green "======================================================================"
 	else
         red "================================"
@@ -319,26 +318,21 @@ function remove_trojan(){
     green "=============="
 }
 
-function bbr_boost_sh(){
-    bash <(curl -L -s -k "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh")
-}
 
 start_menu(){
     clear
     green " ===================================="
     green " Trojan 一键安装自动脚本      "
     green " 系统：centos7+/debian9+/ubuntu16.04+"
-    green " 网站：www.v2rayssr.com （已开启禁止国内访问）              "
-    green " 此脚本为 atrandys 的，波仔集成了BBRPLUS加速 "
-    green " Youtube：波仔分享                "
+    green " 网站：www.wxf2088.xyz （已开启禁止国内访问）              "
+    green " 此脚本为 atrandys 的，只是添加了一个快捷方式 "
+    green " Youtube：王晓峰                "
     green " ===================================="
     echo
     red " ===================================="
     yellow " 1. 一键安装 Trojan"
     red " ===================================="
-    yellow " 2. 安装 4 IN 1 BBRPLUS加速脚本"
-    red " ===================================="
-    yellow " 3. 一键卸载 Trojan"
+    yellow " 2. 一键卸载 Trojan"
     red " ===================================="
     yellow " 0. 退出脚本"
     red " ===================================="
@@ -349,9 +343,6 @@ start_menu(){
     install_trojan
     ;;
     2)
-    bbr_boost_sh 
-    ;;
-    3)
     remove_trojan
     ;;
     0)
