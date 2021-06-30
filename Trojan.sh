@@ -317,7 +317,9 @@ function remove_trojan(){
     green "trojan删除完毕"
     green "=============="
 }
-
+function trojan_wp(){
+    bash <(curl -Ls https://raw.githubusercontent.com/atrandys/trojan/master/trojan_wp.sh)
+}
 
 start_menu(){
     clear
@@ -332,7 +334,9 @@ start_menu(){
     red " ===================================="
     yellow " 1. 一键安装 Trojan"
     red " ===================================="
-    yellow " 2. 一键卸载 Trojan"
+    yellow " 2. 一键安装 Trojan+wordpress（博客）"
+    red " ===================================="
+    yellow " 3. 一键卸载 Trojan"
     red " ===================================="
     yellow " 0. 退出脚本"
     red " ===================================="
@@ -343,6 +347,9 @@ start_menu(){
     install_trojan
     ;;
     2)
+    trojan_wp
+    ;;
+    3)
     remove_trojan
     ;;
     0)
